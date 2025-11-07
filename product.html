@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Clone | Products</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="nav-left">
+      <img src="images/amazon_logo_dark.png" class="logo" onclick="location.href='index.html'">
+    </div>
+
+    <div class="nav-center">
+      <input type="text" placeholder="Search products...">
+      <button><img src="images/search_icon.png"></button>
+    </div>
+
+    <div class="nav-right">
+      <a href="login.html">Sign In</a>
+      <a href="cart.html" class="cart-icon">
+        <img src="images/cart_icon.png" alt="Cart">
+        <span id="cart-count">0</span>
+      </a>
+    </div>
+  </header>
+
+  <section class="products">
+    <h2>All Products</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="images/product1-10.jpg">
+        <h3>Wireless Keyboard</h3>
+        <p>₹1599</p>
+        <button onclick="addToCart('Wireless Keyboard',1599,'images/product1-10.jpg')">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="images/product1-9.jpg">
+        <h3>Laptop Stand</h3>
+        <p>₹699</p>
+        <button onclick="addToCart('Laptop Stand',699,'images/product1-9.jpg')">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="images/product2-11.jpg">
+        <h3>Tablet</h3>
+        <p>₹10999</p>
+        <button onclick="addToCart('Tablet',10999,'images/product2-11.jpg')">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="images/product2-12.jpg">
+        <h3>Gaming Headset</h3>
+        <p>₹2599</p>
+        <button onclick="addToCart('Gaming Headset',2599,'images/product2-12.jpg')">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>© 2025 Amazon Clone | Product Page</footer>
+  <script src="script.js"></script>
+</body>
+</html>

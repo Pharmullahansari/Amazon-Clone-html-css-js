@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Clone | Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="nav-left">
+      <img src="images/amazon_logo_dark.png" class="logo" onclick="location.href='index.html'">
+      <div class="deliver">
+        <img src="images/location_icon.png" alt="Location">
+        <div>
+          <p>Deliver to</p>
+          <h4>India</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-center">
+      <select class="category">
+        <option>All</option>
+        <option>Electronics</option>
+        <option>Fashion</option>
+        <option>Books</option>
+      </select>
+      <input type="text" placeholder="Search Amazon">
+      <button><img src="images/search_icon.png" alt="Search"></button>
+    </div>
+
+    <div class="nav-right">
+      <div class="flag"><img src="images/us_flag.png" alt="Flag"></div>
+      <a href="login.html">
+        <p>Hello, sign in</p>
+        <h4>Account & Lists</h4>
+      </a>
+      <a href="cart.html" class="cart-icon">
+        <img src="images/cart_icon.png" alt="Cart">
+        <span id="cart-count">0</span>
+        <h4>Cart</h4>
+      </a>
+    </div>
+  </header>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="#"><img src="images/menu_icon.png" alt="Menu"> All</a>
+    <a href="#">Today's Deals</a>
+    <a href="#">Customer Service</a>
+    <a href="#">Registry</a>
+    <a href="#">Gift Cards</a>
+    <a href="#">Sell</a>
+  </nav>
+
+  <!-- BANNER -->
+  <section class="banner">
+    <div class="slider">
+      <img src="images/header1.jpg" class="active">
+      <img src="images/header2.jpg">
+      <img src="images/header3.jpg">
+    </div>
+    <div class="banner-btn">
+      <button onclick="location.href='product.html'">Shop Now</button>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products">
+    <h2>Featured Products</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="images/product1-1.jpg">
+        <h3>Smart Watch</h3>
+        <p>₹2499</p>
+        <button onclick="addToCart('Smart Watch',2499,'images/product1-1.jpg')">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="images/product1-6.jpg">
+        <h3>Headphones</h3>
+        <p>₹1999</p>
+        <button onclick="addToCart('Headphones',1999,'images/product1-6.jpg')">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="images/product2-5.jpg">
+        <h3>Gaming Mouse</h3>
+        <p>₹899</p>
+        <button onclick="addToCart('Gaming Mouse',899,'images/product2-5.jpg')">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="images/product2-6.jpg">
+        <h3>Bluetooth Speaker</h3>
+        <p>₹1299</p>
+        <button onclick="addToCart('Bluetooth Speaker',1299,'images/product2-6.jpg')">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>© 2025 Amazon Clone | Front-End Project</footer>
+  <script src="script.js"></script>
+</body>
+</html>
